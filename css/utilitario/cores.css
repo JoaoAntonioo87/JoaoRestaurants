@@ -1,0 +1,24 @@
+:root {
+  /* Cores primarias */
+  --cor-p0: #ffb692;
+  --cor-p1: #f99461;
+  --cor-p2: #f08854;
+  --cor-p3: #d6703d;
+  --cor-p4: #bf5f2f;
+  --cor-p5: #ab5327;
+  --cor-p6: #97441a;
+  --cor-p7: #8c3d16;
+  --cor-p8: #843209;
+
+  /* Cores bases - cinzas */
+  --cor-c0: #fafafa;
+  --cor-c1: #ebebeb;
+  --cor-c2: #d9d9d9;
+  --cor-c3: #b8b6b6;
+  --cor-c4: #9d9d9d;
+  --cor-c5: #747373;
+  --cor-c6: #565656;
+  --cor-c7: #3d3d3d;
+  --cor-c8: #222222;
+  --cor-c9: #171717;
+}
