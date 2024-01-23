@@ -1,0 +1,45 @@
+.font-1-xl {
+  font: 800 96px/120px "Playfair Display", serif;
+}
+.font-1-xl-1 {
+  font: 800 96px/96px "Playfair Display", serif;
+  text-transform: uppercase;
+}
+.font-1-xl-2 {
+  font: 800 96px/105px "Playfair Display", serif;
+}
+.font-1-x {
+  font: 800 72px/72px "Playfair Display", serif;
+}
+.font-2-xl {
+  font: 700 40px/40px "Noto Sans", sans-serif;
+  text-transform: uppercase;
+}
+.font-2-xl-1 {
+  font: 600 40px/40px "Noto Sans", sans-serif;
+}
+.font-2-l {
+  font: 500 32px/48px "Noto Sans", sans-serif;
+}
+.font-2-l-1 {
+  font: italic 500 32/36px "Noto Sans", sans-serif;
+}
+.font-2-l-2 {
+  font: 500 32px/32px "Noto Sans", sans-serif;
+}
+.font-2-m {
+  font: 300 28px/28px "Noto Sans", sans-serif;
+}
+.font-2-s {
+  font: 500 24px/36px "Noto Sans", sans-serif;
+}
+.font-2-s-1 {
+  font: 500 24px/24px "Noto Sans", sans-serif;
+  text-transform: uppercase;
+}
+.font-2-xs {
+  font: 300 20px/26px "Noto Sans", sans-serif;
+}
+.font-2-xxs {
+  font: 500 18px/24px "Noto Sans", sans-serif;
+}
