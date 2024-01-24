@@ -1,2 +1,6 @@
+/* Utilitario */
 @import "./utilitario/cores.css";
 @import "./utilitario/tipografia.css";
+
+/* Global */
+@import "./global.css";
