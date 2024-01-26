@@ -4,3 +4,6 @@
 
 /* Global */
 @import "./global.css";
+
+/* Home */
+@import "./home/introducao.css";
