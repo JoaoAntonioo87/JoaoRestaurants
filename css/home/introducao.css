@@ -83,10 +83,13 @@
 
 @media (max-width: 600px) {
   .introducao-conteudo {
-    margin-left: 120px;
+    justify-self: center;
+    min-width: auto;
+    display: grid;
+    grid-template-columns: 1fr;
   }
   .introducao h1 + p {
-    margin-top: 10px;
+    margin-top: 24px;
     margin-bottom: 40px;
   }
 }

@@ -1,5 +1,4 @@
-body,
-h1 {
+* {
   margin: 0;
   padding: 0;
 }
@@ -94,8 +93,6 @@ img {
   .header ul {
     gap: 15px;
   }
-}
-@media (max-width: 450px) {
   .header {
     height: 80px;
   }
@@ -106,4 +103,10 @@ img {
     display: grid;
     align-self: center;
   }
+  .header a {
+    padding: 5px 10px;
+  }
+}
+
+@media (max-width: 400px) {
 }
