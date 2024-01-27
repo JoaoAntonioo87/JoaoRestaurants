@@ -3,16 +3,17 @@
 }
 
 .introducao {
-  display: grid;
-  grid-template-columns: 7fr 5fr;
+  display: flex;
   padding-top: 72px;
+  gap: 100px;
 }
 
 .introducao-conteudo {
   display: grid;
+  min-width: 600px;
   justify-content: left;
   align-content: center;
-  padding-left: calc((100vw - 1160px) / 2);
+  padding-left: calc((100vw - 1200px) / 2);
 }
 
 .introducao p {
@@ -31,29 +32,39 @@
   justify-self: start;
 }
 
+.introducao picture {
+  display: grid;
+  justify-content: left;
+}
+
 @media (max-width: 1200px) {
   .introducao-conteudo {
-    padding-left: calc((100vw - 760px) / 2);
+    padding-left: calc((100vw - 800px) / 2);
   }
-
+  .introducao {
+    gap: 40px;
+  }
+  .introducao-conteudo {
+    min-width: 435px;
+  }
   .introducao h1 + p {
     margin-top: 28px;
     margin-bottom: 42px;
   }
   .introducao picture {
-    display: grid;
     align-self: center;
   }
 }
 
 @media (max-width: 1000px) {
   .introducao {
-    grid-template-columns: 1fr;
-    justify-items: center;
+    justify-content: center;
     padding-top: 40px;
   }
   .introducao-conteudo {
     justify-items: center;
+    margin-left: 40px;
+    padding-left: 0px;
   }
   .introducao p {
     text-align: center;
@@ -71,6 +82,9 @@
 }
 
 @media (max-width: 600px) {
+  .introducao-conteudo {
+    margin-left: 120px;
+  }
   .introducao h1 + p {
     margin-top: 10px;
     margin-bottom: 40px;

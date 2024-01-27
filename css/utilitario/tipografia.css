@@ -34,7 +34,7 @@
   font: 500 24px/36px "Noto Sans", sans-serif;
 }
 .font-2-s-1 {
-  font: 500 24px/24px "Noto Sans", sans-serif;
+  font: 700 24px/24px "Noto Sans", sans-serif;
   text-transform: uppercase;
 }
 .font-2-xs {
@@ -55,6 +55,11 @@
   }
   .font-2-l-2 {
     font-size: 24px;
+  }
+
+  .font-1-xl {
+    font-size: 76px;
+    line-height: 84px;
   }
 }
 
