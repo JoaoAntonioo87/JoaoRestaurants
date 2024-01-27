@@ -43,3 +43,28 @@
 .font-2-xxs {
   font: 500 18px/24px "Noto Sans", sans-serif;
 }
+
+@media (max-width: 1200px) {
+  .font-1-x {
+    font-size: 54px;
+  }
+  .font-2-s,
+  .font-2-s-1 {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .font-2-l-2 {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 600px) {
+  .font-1-x {
+    font-size: 44px;
+  }
+  .font-2-s,
+  .font-2-s-1 {
+    font-size: 16px;
+    line-height: 22px;
+  }
+}

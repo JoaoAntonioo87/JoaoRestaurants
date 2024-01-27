@@ -5,19 +5,14 @@
 .introducao {
   display: grid;
   grid-template-columns: 7fr 5fr;
-  align-items: center;
-  padding-top: 154px;
-  gap: 40px;
-  position: relative;
+  padding-top: 72px;
 }
 
-picture img {
-  position: absolute;
-  top: 82px;
-  max-width: 41vw;
-  border-radius: 4px;
-  height: 100%;
-  object-fit: cover;
+.introducao-conteudo {
+  display: grid;
+  justify-content: left;
+  align-content: center;
+  padding-left: calc((100vw - 1160px) / 2);
 }
 
 .introducao p {
@@ -25,7 +20,7 @@ picture img {
 }
 
 .introducao h1 + p {
-  margin-top: 72px;
+  margin-top: 48px;
   margin-bottom: 72px;
 }
 
@@ -33,16 +28,51 @@ picture img {
   background-color: var(--cor-p7);
   padding: 10px 20px;
   border-radius: 4px;
+  justify-self: start;
 }
 
-@media (min-width: 1600px) {
-  picture img {
-    max-width: 726px;
+@media (max-width: 1200px) {
+  .introducao-conteudo {
+    padding-left: calc((100vw - 760px) / 2);
+  }
+
+  .introducao h1 + p {
+    margin-top: 28px;
+    margin-bottom: 42px;
+  }
+  .introducao picture {
+    display: grid;
+    align-self: center;
   }
 }
 
-@media (min-width: 2000px) {
-  picture img {
-    max-width: 800px;
+@media (max-width: 1000px) {
+  .introducao {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    padding-top: 40px;
+  }
+  .introducao-conteudo {
+    justify-items: center;
+  }
+  .introducao p {
+    text-align: center;
+  }
+  .introducao a {
+    justify-self: center;
+  }
+  .introducao img {
+    display: none;
+  }
+  .introducao h1 + p {
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 600px) {
+  .introducao h1 + p {
+    margin-top: 10px;
+    margin-bottom: 40px;
   }
 }

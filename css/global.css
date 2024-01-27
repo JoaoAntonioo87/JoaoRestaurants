@@ -25,6 +25,26 @@ img {
   margin: 0 auto;
 }
 
+@media (max-width: 1200px) {
+  .container {
+    width: 800px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .container {
+    box-sizing: border-box;
+    padding: 0 20px;
+    width: auto;
+  }
+}
+
+@media (max-width: 700px) {
+  .container {
+    display: none;
+  }
+}
+
 /* Header-cabeçalho */
 .header-bg {
   background-color: var(--cor-p0);
@@ -45,6 +65,7 @@ img {
 
 .header li a {
   position: relative;
+  padding: 10px;
 }
 
 .header li a::after {
@@ -54,11 +75,35 @@ img {
   position: absolute;
   height: 2px;
   width: 0px;
-  bottom: -4px;
-  left: 0px;
+  bottom: 4px;
+  left: 10px;
   transition: 0.3s;
 }
 
 .header li a:hover:after {
-  width: 100%;
+  width: calc(100% - 10px);
+}
+
+@media (max-width: 1000px) {
+  .header ul {
+    gap: 30px;
+  }
+}
+
+@media (max-width: 600px) {
+  .header ul {
+    gap: 15px;
+  }
+}
+@media (max-width: 450px) {
+  .header {
+    height: 80px;
+  }
+  .header-bg {
+    height: 80px;
+  }
+  .header li {
+    display: grid;
+    align-self: center;
+  }
 }
