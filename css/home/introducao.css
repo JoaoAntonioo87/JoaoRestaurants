@@ -22,9 +22,11 @@
 
 .introducao h1 + p {
   margin-top: 48px;
-  margin-bottom: 72px;
 }
 
+.introducao p + a {
+  margin-top: 72px;
+}
 .introducao a {
   background-color: var(--cor-p7);
   padding: 10px 20px;

@@ -49,6 +49,10 @@
     font-size: 54px;
     line-height: 54px;
   }
+  .font-1-xl-1 {
+    font-size: 80px;
+    line-height: 80px;
+  }
   .font-2-s,
   .font-2-s-1 {
     font-size: 18px;
@@ -59,10 +63,28 @@
   }
 }
 
+@media (max-width: 1000px) {
+  .font-1-xl-1 {
+    font-size: 72px;
+    line-height: 72px;
+  }
+}
+
+@media (max-width: 800px) {
+  .font-1-xl-1 {
+    font-size: 52px;
+    line-height: 52px;
+  }
+}
+
 @media (max-width: 600px) {
   .font-1-x {
     font-size: 44px;
     line-height: 44px;
+  }
+  .font-1-xl-1 {
+    font-size: 40px;
+    line-height: 40px;
   }
   .font-2-s,
   .font-2-s-1 {
@@ -79,6 +101,10 @@
   .font-1-x {
     font-size: 36px;
     line-height: 36px;
+  }
+  .font-1-xl-1 {
+    font-size: 28px;
+    line-height: 28px;
   }
   .font-2-s,
   .font-2-s-1 {
