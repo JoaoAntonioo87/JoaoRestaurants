@@ -3,7 +3,9 @@
 @import "./utilitario/tipografia.css";
 
 /* Global */
-@import "./global.css";
+@import "./global/global.css";
+@import "./global/header.css";
+@import "./global/footer.css";
 
 /* Home */
 @import "./home/introducao.css";
