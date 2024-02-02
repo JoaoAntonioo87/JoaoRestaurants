@@ -40,6 +40,14 @@
   justify-items: center;
 }
 
+.footer-internos a:hover {
+  padding: 0 10px;
+  background-color: var(--cor-c7);
+  color: var(--cor-p0);
+  border-radius: 4px;
+  transition: 0.3s;
+}
+
 .footer-externos {
   display: flex;
   gap: 20px;
