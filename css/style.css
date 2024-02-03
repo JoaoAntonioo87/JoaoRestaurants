@@ -11,3 +11,6 @@
 @import "./home/introducao.css";
 @import "./home/cardapio.css";
 @import "./home/parceiros.css";
+
+/* Unidades */
+@import "./unidades/unidades.css";

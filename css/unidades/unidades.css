@@ -1,0 +1,153 @@
+.unidades-intro {
+  padding-top: 72px;
+}
+
+.unidades-bg {
+  background-color: var(--cor-c8);
+  margin: 68px auto 120px auto;
+}
+
+.unidade-sp {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-top: 116px;
+  gap: 140px;
+}
+
+.unidade-sp img {
+  border-radius: 4px;
+}
+
+.unidade-sp-conteudo {
+  display: grid;
+  align-items: center;
+}
+
+.unidade-sp p,
+.unidade-rj p {
+  max-width: 35ch;
+}
+
+.unidade-rj {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 140px;
+}
+
+.unidade-rj h1 {
+  line-height: 105px;
+}
+
+.unidade-rj-conteudo {
+  display: grid;
+  align-items: center;
+}
+
+.unidade-rj img {
+  border-radius: 4px;
+}
+
+@media (min-width: 1800px) {
+  .unidades-bg {
+    width: 80vw;
+  }
+}
+
+@media (min-width: 1600px) {
+  .unidades-bg {
+    width: 85vw;
+  }
+}
+
+@media (min-width: 1400px) {
+  .unidades-bg {
+    width: 90vw;
+    border-radius: 4px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .unidades-bg {
+    border-radius: 4px;
+    width: 90vw;
+  }
+
+  .unidade-sp,
+  .unidade-rj {
+    gap: 100px;
+  }
+  .unidade-rj h1 {
+    line-height: 52px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .unidades-intro,
+  .unidade-sp,
+  .unidade-rj {
+    padding-left: 10vw;
+    padding-right: 10vw;
+    gap: 60px;
+  }
+  .unidades-bg {
+    width: 100vw;
+    border-radius: 0px;
+  }
+}
+
+@media (max-width: 800px) {
+  .unidades img {
+    display: none;
+  }
+
+  .unidade-sp {
+    padding-top: 10px;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    position: relative;
+  }
+  .unidade-sp::after {
+    content: "";
+    position: absolute;
+    width: 70vw;
+    border-radius: 4px;
+    height: 2px;
+    bottom: -60px;
+    background-color: var(--cor-c7);
+  }
+  .unidade-rj {
+    justify-items: center;
+    grid-template-columns: 1fr;
+    padding-top: 120px;
+    padding-bottom: 0px;
+  }
+
+  .unidade-sp h1,
+  .unidade-sp p,
+  .unidade-rj h1,
+  .unidade-rj p {
+    justify-self: center;
+    text-align: center;
+    width: auto;
+  }
+
+  h1 + p {
+    margin-top: 32px;
+  }
+
+  p + p {
+    margin-top: 32px;
+  }
+}
+@media (max-width: 500px) {
+  .unidade-sp {
+    padding-top: 0;
+  }
+}
+@media (max-width: 400px) {
+  .unidades-bg {
+    margin-bottom: 80px;
+  }
+}
