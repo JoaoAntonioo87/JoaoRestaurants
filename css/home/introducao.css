@@ -51,7 +51,9 @@
   }
   .introducao h1 + p {
     margin-top: 28px;
-    margin-bottom: 42px;
+  }
+  .introducao p + a {
+    margin-top: 48px;
   }
   .introducao picture {
     align-self: center;
@@ -79,7 +81,6 @@
   }
   .introducao h1 + p {
     margin-top: 20px;
-    margin-bottom: 40px;
   }
 }
 
@@ -92,6 +93,8 @@
   }
   .introducao h1 + p {
     margin-top: 24px;
-    margin-bottom: 40px;
+  }
+  .introducao p + a {
+    margin-top: 28px;
   }
 }
