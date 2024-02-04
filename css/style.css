@@ -17,3 +17,6 @@
 
 /* Cardápio */
 @import "./cardapio/cardapio.css";
+
+/* Termos */
+@import "./termos/termos.css";

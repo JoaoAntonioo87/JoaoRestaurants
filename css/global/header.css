@@ -11,6 +11,11 @@
   align-items: center;
 }
 
+.header a[href="./"] {
+  display: grid;
+  place-content: center;
+}
+
 .header ul {
   display: flex;
   gap: 60px;
