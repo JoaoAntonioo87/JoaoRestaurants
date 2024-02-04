@@ -57,6 +57,12 @@
   margin-bottom: 40px;
 }
 
+@media (max-width: 600px) {
+  .footer-logo img {
+    width: 75%;
+  }
+}
+
 @media (max-width: 800px) {
   .footer-internos li {
     display: grid;

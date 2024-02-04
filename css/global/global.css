@@ -39,12 +39,6 @@ img {
   }
 }
 
-@media (max-width: 700px) {
-  .container {
-    display: none;
-  }
-}
-
 /* Botao */
 .botao {
   box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.1);

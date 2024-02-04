@@ -70,12 +70,19 @@
   .header a {
     padding: 5px 10px;
   }
+  .header img {
+    width: 70%;
+  }
 }
+
 @media (max-width: 400px) {
   .header .ativo::after {
     width: 75%;
   }
   .header li a:hover::after {
     width: 75%;
+  }
+  .header img {
+    width: 50%;
   }
 }

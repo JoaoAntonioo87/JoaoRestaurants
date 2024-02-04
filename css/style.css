@@ -14,3 +14,6 @@
 
 /* Unidades */
 @import "./unidades/unidades.css";
+
+/* Cardápio */
+@import "./cardapio/cardapio.css";
