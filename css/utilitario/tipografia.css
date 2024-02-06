@@ -115,6 +115,10 @@
     font-size: 28px;
     line-height: 28px;
   }
+  .font-2-l {
+    font-size: 20px;
+    line-height: 24px;
+  }
   .font-2-l-1 {
     font-size: 20px;
     line-height: 22px;
@@ -149,6 +153,10 @@
   .font-2-s-1 {
     font-size: 16px;
     line-height: 22px;
+  }
+  .font-2-l {
+    font-size: 16px;
+    line-height: 18px;
   }
   .font-2-l-1 {
     font-size: 24px;
@@ -208,6 +216,10 @@
   .font-1-x {
     font-size: 28px;
     line-height: 28px;
+  }
+  .font-2-l {
+    font-size: 12px;
+    line-height: 14px;
   }
   .font-2-l-2 {
     font-size: 14px;

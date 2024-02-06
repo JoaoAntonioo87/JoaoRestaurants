@@ -11,44 +11,30 @@
   margin-top: 72px;
 }
 
-.sobremesas-bg {
-  background-color: var(--cor-c7);
-  margin-bottom: 120px;
-}
-
-.pratos-titulo,
-.sobremesas-titulo {
+.cardapio-titulo {
   padding-top: 40px;
 }
 
-.pratos-conteudo,
-.sobremesas-conteudo {
+.cardapio-conteudo {
   display: flex;
   padding-top: 40px;
   padding-bottom: 40px;
   gap: 110px;
 }
 
-.sobremesas-conteudo {
-  padding-bottom: 54px;
-}
-
-.pratos-conteudo img,
-.sobremesas-conteudo img {
+.cardapio-conteudo img {
   border-radius: 4px;
   width: 300px;
   height: 300px;
   object-fit: cover;
 }
 
-.pratos-conteudo h2,
-.sobremesas-conteudo h2 {
+.cardapio-conteudo h2 {
   margin-top: 40px;
   position: relative;
 }
 
-.pratos-conteudo h2::before,
-.sobremesas-conteudo h2::before {
+.cardapio-conteudo h2::before {
   content: "";
   position: absolute;
   width: 10px;
@@ -58,51 +44,54 @@
   background-color: var(--cor-c7);
 }
 
-.sobremesas-conteudo h2::before {
-  background-color: var(--cor-p1);
-}
-
-.pratos-conteudo p,
-.sobremesas-conteudo p {
+.cardapio-conteudo p {
   margin-top: 20px;
   max-width: 35ch;
 }
 
+#sobremesas-bg {
+  background-color: var(--cor-c7);
+  margin-bottom: 120px;
+}
+
+#sobremesas-bg > div > .cardapio-conteudo {
+  padding-bottom: 54px;
+}
+
+#sobremesas-bg > div > .cardapio-conteudo h2::before {
+  background-color: var(--cor-p1);
+}
+
 @media (min-width: 1400px) {
-  .pratos-bg,
-  .sobremesas-bg {
+  .cardapio-bgs {
     margin-right: 5vw;
     margin-left: 5vw;
     border-radius: 4px 4px 0 0;
   }
-  .sobremesas-bg {
+  #sobremesas-bg {
     border-radius: 0 0 4px 4px;
   }
 }
 
 @media (min-width: 1600px) {
-  .pratos-bg,
-  .sobremesas-bg {
+  .cardapio-bgs {
     margin-right: 10vw;
     margin-left: 10vw;
   }
 }
 
 @media (min-width: 2000px) {
-  .pratos-bg,
-  .sobremesas-bg {
+  .cardapio-bgs {
     margin-right: 15vw;
     margin-left: 15vw;
   }
 }
 
 @media (max-width: 1200px) {
-  .pratos-conteudo,
-  .sobremesas-conteudo {
+  .cardapio-conteudo {
     gap: 80px;
   }
-  .pratos-conteudo h2::before,
-  .sobremesas-conteudo h2::before {
+  .cardapio-conteudo h2::before {
     top: 12px;
     width: 8px;
     height: 4px;
@@ -118,46 +107,38 @@
   .pratos-bg {
     margin-top: 40px;
   }
-  .pratos-titulo,
-  .pratos-conteudo,
-  .sobremesas-titulo,
-  .sobremesas-conteudo {
+  .cardapio-titulo,
+  .cardapio-conteudo {
     margin-right: 5vw;
     margin-left: 5vw;
   }
-  .pratos-conteudo h2::before,
-  .sobremesas-conteudo h2::before {
+  .cardapio-conteudo h2::before {
     top: 12px;
   }
 }
 
 @media (max-width: 800px) {
-  .pratos-conteudo h2::before,
-  .sobremesas-conteudo h2::before {
+  .cardapio-conteudo h2::before {
     top: 8px;
   }
 }
 
 @media (max-width: 700px) {
-  .pratos-conteudo,
-  .sobremesas-conteudo {
+  .cardapio-conteudo {
     gap: 40px;
     display: grid;
     padding-bottom: 80px;
   }
-  .pratos-conteudo li,
-  .sobremesas-conteudo li {
+  .cardapio-conteudo li {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto 1fr;
   }
-  .pratos-conteudo h2,
-  .sobremesas-conteudo h2 {
+  .cardapio-conteudo h2 {
     padding-right: 20px;
     margin-top: 0px;
   }
-  .pratos-conteudo h2::before,
-  .sobremesas-conteudo h2::before {
+  .cardapio-conteudo h2::before {
     top: 15px;
   }
   .pratos-conteudo p {
@@ -168,8 +149,7 @@
     margin-top: 0px;
     padding-right: 20px;
   }
-  .pratos-conteudo img,
-  .sobremesas-conteudo img {
+  .cardapio-conteudo img {
     grid-column: 2;
     grid-row: 1/3;
     height: 175px;
@@ -179,8 +159,7 @@
 }
 
 @media (max-width: 600px) {
-  .pratos-conteudo h2::before,
-  .sobremesas-conteudo h2::before {
+  .cardapio-conteudo h2::before {
     top: 12px;
   }
 }

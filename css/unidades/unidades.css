@@ -11,6 +11,10 @@
   margin: 68px auto 120px auto;
 }
 
+.img2 {
+  display: none;
+}
+
 .unidade-sp {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -55,7 +59,7 @@
 
 @media (min-width: 1800px) {
   .unidades-bg {
-    width: 80vw;
+    width: 6;
   }
 }
 
@@ -73,9 +77,14 @@
 }
 
 @media (max-width: 1200px) {
+  .unidades-intro {
+    padding-top: 48px;
+  }
+
   .unidades-bg {
     border-radius: 4px;
     width: 90vw;
+    margin-top: 48px;
   }
 
   .unidade-sp,
@@ -91,9 +100,17 @@
   .unidades-intro,
   .unidade-sp,
   .unidade-rj {
-    padding-left: 10vw;
-    padding-right: 10vw;
+    padding: 52px 10vw 0 10vw;
     gap: 60px;
+  }
+
+  .unidade-sp-conteudo picture,
+  .unidade-rj-conteudo picture {
+    grid-row: 4;
+  }
+
+  .unidade-rj {
+    padding-bottom: 52px;
   }
   .unidades-bg {
     width: 100vw;
@@ -102,15 +119,35 @@
 }
 
 @media (max-width: 800px) {
-  .unidades img {
+  .unidades-intro {
+    padding-top: 32px;
+  }
+  .unidades-bg {
+    margin-top: 32px;
+  }
+  .img1 {
     display: none;
   }
-
+  picture {
+    display: grid;
+    justify-content: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .img2 {
+    display: block;
+    width: 100vw;
+    height: 350px;
+    object-fit: cover;
+    object-position: center right;
+  }
   .unidade-sp {
-    padding-top: 10px;
+    padding-top: 60px;
     grid-template-columns: 1fr;
     justify-items: center;
     position: relative;
+    grid-template-rows: auto 0px;
+    gap: 0px;
   }
   .unidade-sp::after {
     content: "";
@@ -125,9 +162,18 @@
     justify-items: center;
     grid-template-columns: 1fr;
     padding-top: 120px;
-    padding-bottom: 0px;
+    padding-bottom: 60px;
+    grid-template-rows: auto 0px;
+    gap: 0px;
   }
 
+  .pic-img1 {
+    grid-row: 2;
+  }
+  .unidade-sp-conteudo picture,
+  .unidade-rj-conteudo picture {
+    grid-row: 3;
+  }
   .unidade-sp h1,
   .unidade-sp p,
   .unidade-rj h1,
@@ -145,13 +191,33 @@
     margin-top: 32px;
   }
 }
-@media (max-width: 500px) {
-  .unidade-sp {
-    padding-top: 0;
+
+@media (max-width: 600px) {
+  .img2 {
+    display: block;
+    width: 100vw;
+    height: 250px;
+    object-fit: cover;
+    object-position: center right;
+  }
+  .unidades-bg {
+    margin-bottom: 60px;
+  }
+
+  .unidade-sp::after {
+    bottom: -32px;
+  }
+
+  .unidade-rj {
+    padding-top: 60px;
   }
 }
+
 @media (max-width: 400px) {
   .unidades-bg {
     margin-bottom: 80px;
+  }
+  .img2 {
+    height: 150px;
   }
 }
