@@ -50,6 +50,11 @@
   justify-self: start;
 }
 
+.home-cardapio a:hover {
+  background-color: var(--cor-p5);
+  color: var(--cor-c2);
+}
+
 .home-cardapio-detalhe_e {
   display: none;
 }

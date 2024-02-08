@@ -134,12 +134,16 @@
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto 1fr;
   }
+
   .cardapio-conteudo h2 {
     padding-right: 20px;
     margin-top: 0px;
   }
   .cardapio-conteudo h2::before {
-    top: 15px;
+    top: 10px;
+  }
+  .cardapio-conteudo p {
+    width: 25ch;
   }
   .pratos-conteudo p {
     margin-top: 10px;
@@ -161,5 +165,14 @@
 @media (max-width: 600px) {
   .cardapio-conteudo h2::before {
     top: 12px;
+  }
+  .cardapio-conteudo p {
+    width: 17ch;
+  }
+}
+
+@media (max-width: 400px) {
+  .cardapio-conteudo p {
+    width: 13ch;
   }
 }

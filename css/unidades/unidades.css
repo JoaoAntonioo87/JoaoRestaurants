@@ -128,7 +128,7 @@
   .img1 {
     display: none;
   }
-  picture {
+  .unidades picture {
     display: grid;
     justify-content: center;
     padding-top: 40px;

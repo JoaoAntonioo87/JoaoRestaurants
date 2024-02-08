@@ -1,0 +1,136 @@
+#trabalhe_conosco {
+  background-color: var(--cor-c0);
+}
+
+.trabalhe-intro {
+  padding-top: 72px;
+}
+
+#trabalhe_conosco form {
+  display: grid;
+  margin-bottom: 120px;
+}
+
+.formulario {
+  background-color: var(--cor-c1);
+  margin-top: 52px;
+  margin-right: 4vw;
+  margin-left: 4vw;
+  border-radius: 4px;
+  padding-top: 72px;
+}
+
+.formulario form {
+  display: grid;
+}
+
+.formulario label {
+  font: inherit;
+  color: inherit;
+  display: block;
+}
+
+.formulario input:focus,
+.formulario textarea:focus {
+  outline: none;
+  border: solid 2px var(--cor-p1);
+  border-radius: 4px;
+  box-shadow: 0px 0px 4px rgba(240, 136, 84, 1);
+}
+
+.formulario input,
+.formulario textarea {
+  font-size: 1.5rem;
+}
+
+.formulario label + input,
+.formulario label + textarea {
+  margin-top: 20px;
+  margin-bottom: 52px;
+  padding: 12px 20px;
+}
+
+.formulario #curriculo {
+  padding: 0;
+  border: none;
+  box-shadow: none;
+}
+
+.formulario .quebra {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+}
+
+.formulario button {
+  background-color: var(--cor-p1);
+  border: none;
+  padding: 24px 104px;
+  border-radius: 4px;
+  justify-self: center;
+  margin-top: 28px;
+  margin-bottom: 72px;
+  transition: 0.3s;
+}
+
+.formulario button:hover {
+  cursor: pointer;
+  transition: 0.3s;
+  background-color: var(--cor-p3);
+  color: var(--cor-c0);
+  letter-spacing: 1.3px;
+}
+
+@media (max-width: 1200px) {
+  .trabalhe-intro {
+    padding-top: 32px;
+  }
+
+  #trabalhe_conosco form {
+    margin-bottom: 80px;
+  }
+  .formulario {
+    margin-top: 32px;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 2vw;
+    padding-right: 2vw;
+  }
+}
+
+@media (max-width: 800px) {
+  .formulario {
+    padding-top: 44px;
+  }
+  .formulario .quebra {
+    grid-template-columns: 1fr;
+    justify-items: left;
+  }
+  .formulario input,
+  .formulario textarea {
+    width: 70vw;
+    font-size: 1.3rem;
+  }
+  .formulario #curriculo {
+    font-size: 16px;
+  }
+  .formulario button {
+    padding: 18px 48px;
+  }
+}
+
+@media (max-width: 600px) {
+  .formulario input,
+  .formulario textarea {
+    font-size: 1rem;
+  }
+  .formulario label + input,
+  .formulario label + textarea {
+    margin-top: 12px;
+    margin-bottom: 32px;
+  }
+  .formulario button {
+    margin-top: 40px;
+    margin-bottom: 52px;
+  }
+}

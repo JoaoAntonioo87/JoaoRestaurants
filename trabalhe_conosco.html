@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <meta name="description" content="Joäo Restaurant's. O melhor restarante de gastronomia fina do mundo."> -->
+  <!-- Estilos -->
+  <link rel="preload" href="./css/style.css" as="style">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="icon" type="image/x-icon" href="./Favicon.svg">
+  <!-- Fontes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,500;0,600;0,700;1,300;1,500&family=Playfair+Display:wght@800&display=swap" rel="stylesheet">
+  <title>Unidades</title>
+</head>
+
+<body id="trabalhe_conosco">
+  <header>
+    <div class="header-bg">
+      <div class="header container">
+        <a href="./"><img src="./img/icones/logo.svg" alt="" width="70" height="53"></a>
+        <ul class="font-2-l-2 cor-c9">
+          <li> <a href="./unidades.html">Unidades</a></li>
+          <li> <a href="./cardapio.html">Cardápio</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div class="trabalhe-intro container">
+      <p class="font-2-l cor-c9 ">Faça parte da melhor equipe gastronomia do mundo.</p>
+    </div>
+    <section class="formulario">
+      <div class="container">
+        <form class="font-2-l-2 cor-c9" action="./trabalhe_conosco.html">
+          <label for="nome">Nome</label>
+          <input type="text" id="nome" name="nome">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email">
+          <div class="quebra">
+            <div>
+              <label for="cargo">Cargo Pretendido</label>
+              <input type="text" id="cargo" name="cargo">
+            </div>
+            <div>
+              <label for="formacao">Formação</label>
+              <input list="opcao-formacao" id="formacao" name="formacao">
+              <datalist id="opcao-formacao">
+                <option value="Ensino fundamental incompleto"></option>
+                <option value="Ensino fundamental completo"></option>
+                <option value="Ensino médio incompleto"></option>
+                <option value="Ensino médio completo"></option>
+                <option value="Ensino técnico incompleto"></option>
+                <option value="Ensino técnico completo"></option>
+                <option value="Ensino superior incompleto"></option>
+                <option value="Ensino superior completo"></option>
+              </datalist>
+            </div>
+          </div>
+          <div class="quebra">
+            <div>
+              <label for="estado">Estado</label>
+              <input list="opcao-estado" id="estado" name="estado">
+              <datalist id="opcao-estado">
+                <option value="Paraná"></option>
+                <option value="Rio de Janeiro"></option>
+                <option value="São Paulo"></option>
+              </datalist>
+            </div>
+            <div>
+              <label for="cep">CEP</label>
+              <input type="number" id="cep" name="cep">
+            </div>
+          </div>
+          <label for="sobre">Sobre você</label>
+          <textarea rows="5" itemref="sobre" name="sobre"></textarea>
+          <label for="curriculo">Currículo</label>
+          <input type="file" id="curriculo" name="curriculo">
+          <button class="font-2-xl cor-c9">Enviar</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-bg">
+      <div class="footer container">
+        <picture>
+          <a class="footer-logo" href="./"><img src="./img/icones/logo.svg" alt=""></a>
+        </picture>
+        <div class="footer-conteudo  font-2-s cor-c7">
+          <ul class="footer-internos">
+            <li>
+              <a href="./unidades.html">Unidades</a>
+              <a href="./cardapio.html">Cardapio</a>
+              <a href="./termos.html">Termos e condições</a>
+              <a href="./trabalhe_conosco.html">Trabalhe Conosco</a>
+            </li>
+          </ul>
+          <ul class="footer-externos">
+            <li><a href="./"><img src="./img/icones/facebook.svg" alt=""></a></li>
+            <li><a href="./"><img src="./img/icones/instagram.svg" alt=""></a></li>
+            <li><a href="./"><img src="./img/icones/X-Twitter.svg" alt=""></a></li>
+            <li><a href="./"><img src="./img/icones/Linkedin.svg" alt=""></a></li>
+          </ul>
+          <span>Alguns direitos reservados.</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="./script.js"></script>
+</body>
+
+</html>
