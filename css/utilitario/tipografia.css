@@ -36,6 +36,7 @@
 .font-2-s-1 {
   font: 700 24px/24px "Noto Sans", sans-serif;
   text-transform: uppercase;
+  letter-spacing: 0.5px;
 }
 .font-2-xs {
   font: 300 20px/26px "Noto Sans", sans-serif;

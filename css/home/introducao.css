@@ -32,10 +32,11 @@
   padding: 10px 20px;
   border-radius: 4px;
   justify-self: start;
+  transition: 0.3s;
 }
 
 .introducao a:hover {
-  background-color: var(--cor-p5);
+  background-color: var(--cor-p3);
   color: var(--cor-c1);
 }
 .introducao picture {

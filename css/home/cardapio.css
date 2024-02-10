@@ -48,6 +48,7 @@
   padding: 10px 20px;
   border-radius: 4px;
   justify-self: start;
+  transition: 0.3s;
 }
 
 .home-cardapio a:hover {

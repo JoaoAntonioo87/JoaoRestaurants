@@ -33,9 +33,25 @@ img {
 
 @media (max-width: 1000px) {
   .container {
-    box-sizing: border-box;
-    padding: 0 20px;
-    width: auto;
+    width: 750px;
+  }
+}
+
+@media (max-width: 800px) {
+  .container {
+    width: 550px;
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    width: 450px;
+  }
+}
+
+@media (max-width: 500px) {
+  .container {
+    width: 300px;
   }
 }
 
@@ -46,4 +62,5 @@ img {
 
 .botao:hover {
   transition: 0.3s;
+  letter-spacing: 1px;
 }

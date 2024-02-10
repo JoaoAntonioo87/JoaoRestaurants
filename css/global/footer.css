@@ -37,6 +37,12 @@
   display: grid;
   gap: 12px;
 }
+
+.footer-links a:hover,
+.footer-links span:hover {
+  color: var(--cor-c9);
+}
+
 .footer-links .icones {
   display: flex;
 }
@@ -57,6 +63,9 @@
     /* max-width: 440px; */
     flex-wrap: wrap;
     justify-content: center;
+  }
+  .footer-links li:last-child {
+    justify-items: center;
   }
 }
 
