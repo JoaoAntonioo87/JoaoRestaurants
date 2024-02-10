@@ -110,6 +110,10 @@
 }
 
 @media (max-width: 600px) {
+  .pratos-introducao {
+    text-align: center;
+  }
+
   .pratos-conteudo {
     grid-template-columns: 1fr;
   }
