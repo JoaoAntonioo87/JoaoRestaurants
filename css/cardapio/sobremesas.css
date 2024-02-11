@@ -1,0 +1,21 @@
+#sobremesas .item-bg {
+  background-color: var(--cor-c7);
+}
+#sobremesas .item h1::after {
+  background-color: var(--cor-c6);
+}
+
+#sobremesas .item-conteudo div:nth-child(even)::after {
+  background-color: var(--cor-c6);
+}
+
+#sobremesas .item-conteudo h2::before {
+  background-color: var(--cor-p2);
+}
+
+@media (max-width: 600px) {
+  #sobremesas .item-conteudo div::after,
+  #sobremesas .item-conteudo div:nth-child(even)::after {
+    background-color: var(--cor-c6);
+  }
+}

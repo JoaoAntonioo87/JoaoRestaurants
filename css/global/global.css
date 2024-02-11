@@ -91,3 +91,9 @@ img {
   background-color: var(--cor-c1);
   transition: 0.3s;
 }
+
+/* Backgroud das paginas */
+.pagina-bg {
+  background-color: var(--cor-c0);
+  padding-bottom: 120px;
+}
