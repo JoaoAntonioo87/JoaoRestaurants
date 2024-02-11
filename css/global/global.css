@@ -64,3 +64,32 @@ img {
   transition: 0.3s;
   letter-spacing: 1px;
 }
+
+/* Link cardapio */
+
+.link {
+  margin-top: 40px;
+  position: relative;
+  display: flex;
+  transition: 0.3s;
+}
+
+.link::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 4px;
+  bottom: -8px;
+  left: -8px;
+  transition: 0.3s;
+}
+
+.link:hover {
+  color: var(--cor-c1);
+}
+
+.link:hover::after {
+  width: calc(100% + 16px);
+  background-color: var(--cor-c1);
+  transition: 0.3s;
+}

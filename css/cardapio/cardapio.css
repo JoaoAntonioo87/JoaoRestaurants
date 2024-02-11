@@ -1,72 +1,67 @@
 .cardapio {
   background-color: var(--cor-c0);
 }
-.pratos-introducao {
+.cardapio-introducao {
   padding: 72px 0 0 0;
 }
 
-.pratos-bg {
+.prato-bg {
   margin-top: 72px;
   background-color: var(--cor-p1);
 }
 
-.pratos-conteudo {
+.prato-conteudo,
+.sobremesa-conteudo {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 80px;
   padding: 60px 0;
 }
 
-.pratos-conteudo div {
+.prato-conteudo div,
+.sobremesa-conteudo div {
   display: grid;
   grid-template-columns: 1fr;
   align-content: center;
   justify-items: left;
 }
 
-.pratos-conteudo p {
+.prato-conteudo p,
+.prato-conteudo a,
+.sobremesa-conteudo p,
+.sobremesa-conteudo a {
   margin-top: 40px;
 }
 
-.pratos-conteudo a {
-  margin-top: 40px;
-  position: relative;
-  display: flex;
-  transition: 0.3s;
-}
-
-.pratos-conteudo a::after {
-  content: "";
-  position: absolute;
-  width: 0;
-  height: 4px;
-  bottom: -8px;
-  left: -8px;
-  transition: 0.3s;
-}
-
-.pratos-conteudo a:hover {
-  color: var(--cor-c1);
-}
-
-.pratos-conteudo a:hover::after {
-  width: calc(100% + 16px);
-  background-color: var(--cor-c1);
-  transition: 0.3s;
-}
-
-.pratos-conteudo div img {
+.prato-conteudo div img,
+.sobremesa-conteudo div img {
   display: none;
 }
 
-.pratos-conteudo img {
+.prato-conteudo img {
   border-radius: 4px;
   height: 100%;
   object-fit: cover;
 }
 
+/* Aqui acaba os estilos dos pratos */
+
+.sobremesa-bg {
+  margin-bottom: 120px;
+  background-color: var(--cor-c7);
+}
+
+.sobremesa-conteudo img {
+  border-radius: 4px;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Aqui termina os estilos das sobremesas */
+
 @media (max-width: 2200px) {
-  .pratos-bg {
+  .prato-bg,
+  .sobremesa-bg {
     margin-left: auto;
     margin-right: auto;
     border-radius: 4px;
@@ -76,52 +71,64 @@
 }
 
 @media (max-width: 1600px) {
-  .pratos-bg {
+  .prato-bg,
+  .sobremesa-bg {
     width: auto;
+    border-radius: 0;
   }
 }
 
 @media (max-width: 1200px) {
-  .pratos-introducao {
+  .cardapio-introducao {
     padding-top: 36px;
   }
-  .pratos-bg {
+  .prato-bg {
     margin-top: 36px;
   }
-  .pratos-conteudo {
+  .prato-conteudo,
+  .sobremesa-conteudo {
     padding: 40px 0;
+  }
+  .sobremesa-bg {
+    margin-bottom: 80px;
   }
 }
 
 @media (max-width: 1000px) {
-  .pratos-conteudo {
+  .prato-conteudo,
+  .sobremesa-conteudo {
     gap: 36px;
   }
-  .pratos-conteudo p,
-  .pratos-conteudo a {
+  .prato-conteudo p,
+  .prato-conteudo a,
+  .sobremesa-conteudo p,
+  .sobremesa-conteudo a {
     margin-top: 20px;
   }
 }
 
 @media (max-width: 800px) {
-  .pratos-conteudo {
+  .prato-conteudo,
+  .sobremesa-conteudo {
     gap: 20px;
   }
 }
 
 @media (max-width: 600px) {
-  .pratos-introducao {
+  .cardapio-introducao {
     text-align: center;
   }
-
-  .pratos-conteudo {
+  .prato-conteudo,
+  .sobremesa-conteudo {
     grid-template-columns: 1fr;
   }
-  .pratos-conteudo div {
+  .prato-conteudo div,
+  .sobremesa-conteudo div {
     justify-items: center;
     text-align: center;
   }
-  .pratos-conteudo div img {
+  .prato-conteudo div img,
+  .sobremesa-conteudo div img {
     margin-top: 20px;
     display: block;
     max-height: 40vh;
@@ -129,7 +136,9 @@
     object-fit: cover;
   }
 
-  .pratos-conteudo img {
+  .prato-conteudo > picture,
+  .sobremesa-conteudo > picture {
     display: none;
   }
 }
+/* Aqui termina as media query */
