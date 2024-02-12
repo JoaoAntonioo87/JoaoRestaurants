@@ -1,0 +1,103 @@
+.sp-1 {
+  margin-top: 72px;
+  padding-top: 80px;
+  padding-bottom: 60px;
+  background-color: var(--cor-c7);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0 100px;
+}
+.sp-1 img {
+  height: 100%;
+  object-fit: cover;
+  object-position: right;
+}
+
+.sp-1 h1 {
+  position: relative;
+  display: grid;
+}
+
+.sp-1 h1::after {
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 4px;
+  background-color: var(--cor-c6);
+  bottom: -20px;
+  justify-self: center;
+}
+
+.sp-1 p,
+.sp-1 span {
+  padding-top: 60px;
+}
+
+.sp-1 div {
+  display: grid;
+  text-align: center;
+  padding-right: calc((100vw - 1200px) / 2);
+  align-self: center;
+}
+
+.sp-1 div picture {
+  display: none;
+}
+
+@media (max-width: 1200px) {
+  .sp-1 {
+    gap: 0 40px;
+    margin-top: 36px;
+  }
+  .sp-1 p,
+  .sp-1 span {
+    padding-top: 40px;
+  }
+  .sp-1 div {
+    padding-right: calc((100vw - 800px) / 2);
+  }
+}
+
+@media (max-width: 1000px) {
+  .sp-1 div {
+    padding-right: calc((100vw - 750px) / 2);
+  }
+}
+@media (max-width: 800px) {
+  .sp-1 div {
+    padding-right: calc((100vw - 550px) / 2);
+  }
+}
+
+@media (max-width: 600px) {
+  .sp-1 {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    grid-template-columns: 1fr;
+  }
+  .sp-1 picture {
+    display: none;
+  }
+  .sp-1 p {
+    padding-top: 40px;
+  }
+  .sp-1 span {
+    padding-top: 20px;
+  }
+  .sp-1 div {
+    padding-right: 50px;
+    padding-left: 50px;
+  }
+  .sp-1 div picture {
+    padding-top: 20px;
+    display: block;
+    height: 100%;
+  }
+  .sp-1 div img {
+    height: 140px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 500px) {
+}

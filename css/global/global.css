@@ -97,6 +97,17 @@ img {
   padding-bottom: 120px;
 }
 
+/* Titulo */
+.titulo {
+  padding-top: 72px;
+}
+
+@media (max-width: 1200px) {
+  .titulo {
+    padding-top: 36px;
+  }
+}
+
 /* Formulário */
 form {
   display: grid;
