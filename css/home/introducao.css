@@ -63,13 +63,12 @@
 
 @media (max-width: 1000px) {
   .introducao {
+    display: grid;
     justify-content: center;
     padding-top: 40px;
   }
   .introducao-conteudo {
-    justify-items: center;
-    margin-left: 40px;
-    padding-left: 0px;
+    min-width: auto;
   }
   .introducao p {
     text-align: center;
@@ -79,18 +78,6 @@
   }
   .introducao img {
     display: none;
-  }
-  .introducao h1 + p {
-    margin-top: 20px;
-  }
-}
-
-@media (max-width: 600px) {
-  .introducao-conteudo {
-    justify-self: center;
-    min-width: auto;
-    display: grid;
-    grid-template-columns: 1fr;
   }
   .introducao h1 + p {
     margin-top: 24px;

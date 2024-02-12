@@ -30,6 +30,9 @@
 .font-2-m {
   font: 300 28px/28px "Noto Sans", sans-serif;
 }
+.font-2-m-1 {
+  font: 300 28px/44px "Noto Sans", sans-serif;
+}
 .font-2-s {
   font: 500 24px/36px "Noto Sans", sans-serif;
 }
@@ -47,8 +50,8 @@
 
 @media (max-width: 1200px) {
   .font-1-xl {
-    font-size: 48px;
-    line-height: 48px;
+    font-size: 52px;
+    line-height: 52px;
   }
   .font-1-xl-1 {
     font-size: 68px;
@@ -68,6 +71,9 @@
   }
   .font-2-l-2 {
     font-size: 24px;
+  }
+  .font-2-m-1 {
+    font: 300 18px/32px "Noto Sans", sans-serif;
   }
   .font-2-s,
   .font-2-s-1 {
@@ -151,6 +157,9 @@
   .font-2-s-1 {
     font-size: 16px;
     line-height: 22px;
+  }
+  .font-2-m-1 {
+    font: 300 14px/28px "Noto Sans", sans-serif;
   }
   .font-2-l {
     font-size: 16px;
