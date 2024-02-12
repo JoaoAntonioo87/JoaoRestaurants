@@ -29,54 +29,26 @@
     </div>
   </header>
   <main class="pagina-bg">
-    <article>
-      <div class="introducao-bg">
-        <div class="introducao">
-          <div class="introducao-conteudo">
-            <h1 class="font-1-x col-c9">João Restaurant's</h1>
-            <p class="font-2-s cor-c6">Com mais de 30 anos de tradição, a João Restaurant's é a maior companhia de gastronomia fina do mundo.
-            </p>
-            <a class="font-2-s-1 cor-c0 botao" href="./unidades/unidades.html">Venha conhecer</a>
-          </div>
-          <picture>
-            <img src="./img/restaurante1-min.jpg" alt="">
-          </picture>
-        </div>
-      </div>
-    </article>
-    <article>
-      <div class="home-cardapio-bg">
-        <div class="home-cardapio">
-          <picture class="home-cardapio-detalhe">
-            <img src="./img/detalhes/detalhe-jr.svg" alt="">
-          </picture>
-          <picture>
-            <img class="foto" src="./img/cardapio-min.jpg" alt="">
-          </picture>
-          <div class="home-cardapio-conteudo">
-            <h1 class="font-1-x cor-p1">Cardápio</h1>
-            <p class="font-2-s cor-c2">Com um dos cardápios mais variados do mundo, a João Restaurant's se destaca pela qualidade em seus produtos selecionados direto do produtor. </p>
-            <a class="font-2-s-1 cor-c9 botao" href="./cardapio/cardapio.html">Saiba mais</a>
-          </div>
-          <picture class="home-cardapio-detalhe_e">
-            <img src="./img/detalhes/detalhe-e.svg" alt="">
-          </picture>
-        </div>
-      </div>
-
-    </article>
-    <section aria-label="parceiros">
-      <div class="parceiros">
-        <h1 class="font-1-xl-1 cor-c7">Nossos parceiros</h1>
-        <div class="parceiros-conteudo">
-          <img src="./img/parceiros/parceiro1.svg" alt="">
-          <img src="./img/parceiros/parceiro2.svg" alt="">
-          <img src="./img/parceiros/parceiro3.svg" alt="">
-          <img src="./img/parceiros/parceiro4.svg" alt="">
-          <img src="./img/parceiros/parceiro5.svg" alt="">
-        </div>
-      </div>
+    <section aria-label="titulo" class="font-2-l cor-c9 container titulo">
+      <span>A gente quer te ouvir</span>
     </section>
+    <article class="formulario">
+      <form action="./fale-conosco.html" class="font-2-l-2 cor-c9">
+        <label for="nome-fc">Nome</label>
+        <input type="text" id="nome-fc" name="nome-fc" placeholder="Seu nome aqui">
+        <label for="email-fc">Email</label>
+        <input type="email" id="email-fc" name="email-fc" placeholder="email@email.com">
+        <label for="unidade-fc">Unidade</label>
+        <input list="estados-fc" name="estados-fc">
+        <datalist id="estados-fc">
+          <option value="Rio de Janeio"></option>
+          <option value="São Paulo"></option>
+        </datalist>
+        <label for="mensagem-fc">O que deseja falar?</label>
+        <textarea name="mensagem-fc" id="mensagem-fc" rows="5"></textarea>
+        <button class="font-2-xl">Enviar</button>
+      </form>
+    </article>
   </main>
   <footer>
     <div class="footer-bg">

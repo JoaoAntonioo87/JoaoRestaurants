@@ -19,15 +19,13 @@
 <body id="trabalhe_conosco">
   <header>
     <div class="header-bg">
-      <div class="header container">
-        <nav>
-          <a href="./"><img src="./img/icones/logo.svg" alt="" width="70" height="53"></a>
-          <ul class="font-2-l-2 cor-c9">
-            <li> <a href="./unidades/unidades.html">Unidades</a></li>
-            <li> <a href="./cardapio/cardapio.html">Cardápio</a></li>
-          </ul>
-        </nav>
-      </div>
+      <nav class="header container">
+        <a href="./"><img src="./img/icones/logo.svg" alt="" width="70" height="53"></a>
+        <ul class="font-2-l-2 cor-c9">
+          <li> <a href="./unidades/unidades.html">Unidades</a></li>
+          <li> <a href="./cardapio/cardapio.html">Cardápio</a></li>
+        </ul>
+      </nav>
     </div>
   </header>
   <main class="pagina-bg">
@@ -38,9 +36,9 @@
       <div class="container">
         <form class="font-2-l-2 cor-c9" action="./trabalhe_conosco.html">
           <label for="nome">Nome</label>
-          <input type="text" id="nome" name="nome">
+          <input type="text" id="nome" name="nome" placeholder="Seu nome completo">
           <label for="email">Email</label>
-          <input type="email" id="email" name="email">
+          <input type="email" id="email" name="email" placeholder="email@email.com">
           <div class="quebra">
             <div>
               <label for="cargo">Cargo Pretendido</label>
@@ -73,11 +71,11 @@
             </div>
             <div>
               <label for="cep">CEP</label>
-              <input type="number" id="cep" name="cep">
+              <input type="number" id="cep" name="cep" placeholder="00000-000">
             </div>
           </div>
           <label for="sobre">Sobre você</label>
-          <textarea rows="5" itemref="sobre" name="sobre"></textarea>
+          <textarea rows="5" itemref="sobre" name="sobre" placeholder="Escreva um pouco sobre você"></textarea>
           <label for="curriculo">Currículo</label>
           <input type="file" id="curriculo" name="curriculo">
           <button class="font-2-xl cor-c9">Enviar</button>
@@ -85,7 +83,6 @@
       </div>
     </section>
   </main>
-
   <footer>
     <div class="footer-bg">
 
