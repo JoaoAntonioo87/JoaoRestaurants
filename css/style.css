@@ -15,6 +15,7 @@
 /* Unidades */
 @import "./unidades/unidades.css";
 @import "./unidades/sp.css";
+@import "./unidades/rj.css";
 
 /* Cardápio */
 @import "./cardapio/item.css";
