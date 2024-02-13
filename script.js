@@ -9,3 +9,9 @@ function ativo(item) {
 }
 
 lista.forEach(ativo);
+
+// Animação
+
+if (window.SimpleAnime) {
+  new SimpleAnime();
+}

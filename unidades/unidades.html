@@ -9,6 +9,7 @@
   <link rel="preload" href="../css/style.css" as="style">
   <link rel="stylesheet" href="../css/style.css">
   <link rel="icon" type="image/x-icon" href="../Favicon.svg">
+  <script>document.documentElement.classList.add("js");</script>
   <!-- Fontes -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -29,15 +30,15 @@
     </div>
   </header>
   <main class="unidades pagina-bg">
-    <article class="unidades-introducao container">
+    <article data-anime="200" class="fadeInDown unidades-introducao container">
       <p class="font-2-l cor-c9">Venha conhecer uma de nossas unidades</p>
     </article>
     <section class="unidades-bg">
       <div class="unidade-sp container ">
         <picture>
-          <img src="../img/cidade1-min.jpg" alt="">
+          <img data-anime="400" class="fadeInLeft" src="../img/cidade1-min.jpg" alt="">
         </picture>
-        <div>
+        <div data-anime="400" class="fadeInRight">
           <h1 class="font-1-xl cor-p3">São Paulo</h1>
           <p class="font-2-s cor-c2">A mais antiga e tradicional unidade da João Restaurant's, localizada em um dos mais luxuosos bairros da maior metrópole da América Latina</p>
           <picture>
@@ -47,7 +48,7 @@
         </div>
       </div>
       <div class="unidade-rj container">
-        <div class="unidade-rj-conteudo">
+        <div data-anime="400" class="fadeInLeft" class="unidade-rj-conteudo">
           <h1 class="font-1-xl cor-p3">Rio de Janeiro</h1>
           <p class="font-2-s cor-c2">Venha conhecer a mais nova unidade localizada na cidade maravilhosa, o Rio de Janeiro.</p>
           <picture>
@@ -55,7 +56,7 @@
           </picture>
           <a href="./rj.html" class="font-2-s cor-p2 link">CONHEÇA AGORA</a>
         </div>
-        <picture class="pic-img1">
+        <picture data-anime="400" class=" fadeInRight pic-img1">
           <img class="img1" src="../img/cidade2-min.jpg" alt="">
         </picture>
       </div>
@@ -83,7 +84,7 @@
           <li>
             <a>Contatos</a>
             <div>
-              <a class="font-2-xs cor-c6" href="./fale-conosco.html">Fale conosco</a>
+              <a class="font-2-xs cor-c6" href="../fale-conosco.html">Fale conosco</a>
               <a class="font-2-xs cor-c6" href="../trabalhe_conosco.html">Trabalhe conosco</a>
             </div>
           </li>
@@ -96,9 +97,9 @@
           <li>
             <span>Siga-nos</span>
             <div class="icones">
-              <a href="./"><img src="../img/icones/facebook.svg" alt=""></a>
-              <a href="./"><img src="../img/icones/Twitter.svg" alt=""></a>
-              <a href="./"><img src="../img/icones/Linkedin.svg" alt=""></a>
+              <a href="./unidades.html"><img src="../img/icones/facebook.svg" alt=""></a>
+              <a href="./unidades.html"><img src="../img/icones/Twitter.svg" alt=""></a>
+              <a href="./unidades.html"><img src="../img/icones/Linkedin.svg" alt=""></a>
             </div>
           </li>
         </ul>
@@ -107,6 +108,7 @@
 
     </div>
   </footer>
+  <script src="../simple-anime.js"></script>
   <script src="../script.js"></script>
 </body>
 

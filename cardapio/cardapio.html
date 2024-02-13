@@ -9,6 +9,7 @@
   <link rel="preload" href="../css/style.css" as="style">
   <link rel="stylesheet" href="../css/style.css">
   <link rel="icon" type="image/x-icon" href="../Favicon.svg">
+  <script>document.documentElement.classList.add("js");</script>
   <!-- Fontes -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -29,12 +30,12 @@
     </div>
   </header>
   <main class="cardapio">
-    <article aria-label="introdução" class="cardapio-introducao container">
+    <article aria-label="introdução" data-anime="200" class="fadeInDown cardapio-introducao container">
       <span class="font-2-l cor-c9 titulo">Conheça as melhores opções da gastronomia fina</span>
     </article>
     <section class="prato-bg">
       <div class="prato-conteudo container">
-        <div>
+        <div data-anime="400" class="fadeInLeft">
           <h1 class="font-1-xl cor-c7">Pratos</h1>
           <p class="font-2-s cor-c7">Os melhores pratos da gastronomia mundial. Venha saborear essa explosão de sabores consagrada pelos melhores chefs do mundo.</p>
           <picture>
@@ -42,17 +43,17 @@
           </picture>
           <a class="font-2-s cor-p8 link" href="./pratos.html">CONHEÇA AGORA</a>
         </div>
-        <picture>
+        <picture data-anime="400" class="fadeInRight">
           <img src="../img/pratos/prato0.jpg" alt="">
         </picture>
       </div>
     </section>
     <section class="sobremesa-bg">
       <div class="sobremesa-conteudo container">
-        <picture>
+        <picture data-anime="400" class="fadeInLeft">
           <img src="../img/pratos/sobremesa0.jpg" alt="">
         </picture>
-        <div>
+        <div data-anime="400" class="fadeInRight">
           <h1 class="font-1-xl cor-p1">Sobremesas</h1>
           <p class="font-2-s cor-c1">As melhores e mais consagradas sobremesas do mundo você só encontra aqui. Descubra um novo jeito de experimentar uma sobremesa.</p>
           <picture>
@@ -109,6 +110,7 @@
 
     </div>
   </footer>
+  <script src="../simple-anime.js"></script>
   <script src="../script.js"></script>
 </body>
 

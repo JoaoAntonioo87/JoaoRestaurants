@@ -179,12 +179,16 @@
 }
 
 @media (max-width: 1000px) {
+  .sp-1 {
+    padding-bottom: 40px;
+  }
   .sp-1 div {
     padding-right: calc((100vw - 750px) / 2);
   }
   /*  */
   .sp-2 {
     box-shadow: inset 0px 24px var(--cor-c7), inset 0px 60px var(--cor-p0);
+    padding-bottom: 40px;
   }
   .sp-2 > img {
     height: 60px;
@@ -280,6 +284,9 @@
   .sp-1 div img {
     height: 140px;
     width: 100%;
+  }
+  .sp-2 {
+    padding-bottom: 20px;
   }
   /*  */
   .sp-3 h1 {
