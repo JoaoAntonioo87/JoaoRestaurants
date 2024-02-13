@@ -89,9 +89,20 @@
 }
 
 @media (max-width: 800px) {
+  .unidades-bg {
+    padding-bottom: 40px;
+  }
+
   .unidade-sp,
   .unidade-rj {
     grid-template-columns: 1fr;
+    padding-top: 40px;
+  }
+  .unidade-rj {
+    padding-top: 80px;
+  }
+  .unidade-sp::after {
+    bottom: -40px;
   }
   .unidade-sp picture,
   .unidade-rj picture {
@@ -111,6 +122,11 @@
   .unidade-sp a,
   .unidade-rj a {
     margin-top: 40px;
+  }
+  .unidade-sp a,
+  .unidade-rj a {
+    font-size: 20px;
+    line-height: 28px;
   }
 
   .unidade-sp div picture,

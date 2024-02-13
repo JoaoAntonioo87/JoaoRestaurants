@@ -60,12 +60,14 @@
 }
 @media (max-width: 800px) {
   .footer-links {
-    /* max-width: 440px; */
     flex-wrap: wrap;
     justify-content: center;
   }
   .footer-links li:last-child {
     justify-items: center;
+  }
+  .footer-links {
+    padding-bottom: 60px;
   }
 }
 

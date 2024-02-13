@@ -6,6 +6,18 @@
 .parceiros h1 {
   display: grid;
   justify-content: center;
+  position: relative;
+  text-transform: uppercase;
+}
+
+.parceiros h1::after {
+  content: "";
+  position: absolute;
+  width: 65%;
+  height: 4px;
+  background-color: var(--cor-c1);
+  bottom: -20px;
+  justify-self: center;
 }
 
 .parceiros-conteudo {
@@ -77,26 +89,25 @@
     grid-template-columns: 1fr;
     gap: 50px;
   }
+  .parceiros h1 {
+    font-size: 30px;
+    line-height: 30px;
+  }
   .parceiros img {
-    min-width: 60%;
+    min-width: 45%;
   }
   .parceiros-conteudo img:last-child {
     grid-column: 1;
-    min-width: 60%;
+    min-width: 45%;
   }
 }
 @media (max-width: 500px) {
   .parceiros {
     padding-top: 60px;
   }
-  .parceiros img {
-    min-width: 55%;
-  }
   .parceiros-conteudo {
     margin-top: 52px;
-  }
-  .parceiros-conteudo img:last-child {
-    min-width: 55%;
+    gap: 40px;
   }
 }
 @media (max-width: 400px) {
@@ -105,12 +116,6 @@
   }
   .parceiros-conteudo {
     padding-bottom: 0px;
-    gap: 40px;
-  }
-  .parceiros img {
-    min-width: 60%;
-  }
-  .parceiros-conteudo img:last-child {
-    min-width: 60%;
+    gap: 20px;
   }
 }
