@@ -12,12 +12,10 @@
   object-fit: cover;
   object-position: right;
 }
-
 .sp-1 h1 {
   position: relative;
   display: grid;
 }
-
 .sp-1 h1::after {
   content: "";
   position: absolute;
@@ -27,76 +25,18 @@
   bottom: -20px;
   justify-self: center;
 }
-
 .sp-1 p,
 .sp-1 span {
   padding-top: 60px;
 }
-
 .sp-1 div {
   display: grid;
   text-align: center;
   padding-right: calc((100vw - 1200px) / 2);
   align-self: center;
 }
-
 .sp-1 div picture {
   display: none;
-}
-
-@media (max-width: 1200px) {
-  .sp-1 {
-    gap: 0 40px;
-    margin-top: 36px;
-  }
-  .sp-1 p,
-  .sp-1 span {
-    padding-top: 40px;
-  }
-  .sp-1 div {
-    padding-right: calc((100vw - 800px) / 2);
-  }
-}
-
-@media (max-width: 1000px) {
-  .sp-1 div {
-    padding-right: calc((100vw - 750px) / 2);
-  }
-}
-@media (max-width: 800px) {
-  .sp-1 div {
-    padding-right: calc((100vw - 550px) / 2);
-  }
-}
-
-@media (max-width: 600px) {
-  .sp-1 {
-    padding-top: 40px;
-    padding-bottom: 40px;
-    grid-template-columns: 1fr;
-  }
-  .sp-1 picture {
-    display: none;
-  }
-  .sp-1 p {
-    padding-top: 40px;
-  }
-  .sp-1 span {
-    padding-top: 20px;
-  }
-  .sp-1 div {
-    padding-right: 50px;
-    padding-left: 50px;
-  }
-  .sp-1 div picture {
-    padding-top: 20px;
-    display: block;
-    height: 100%;
-  }
-  .sp-1 div img {
-    height: 140px;
-    width: 100%;
-  }
 }
 /*  */
 .sp-2 {
@@ -124,33 +64,6 @@
   height: 100%;
   object-fit: cover;
   object-position: right;
-}
-@media (max-width: 1200px) {
-  .sp-2 {
-    box-shadow: inset 0px 37px var(--cor-c7), inset 0px 90px var(--cor-p0);
-  }
-  .sp-2 > img {
-    height: 90px;
-  }
-}
-@media (max-width: 1000px) {
-  .sp-2 {
-    box-shadow: inset 0px 24px var(--cor-c7), inset 0px 60px var(--cor-p0);
-  }
-  .sp-2 > img {
-    height: 60px;
-  }
-}
-@media (max-width: 800px) {
-  .sp-2 {
-    box-shadow: inset 0px 17px var(--cor-c7), inset 0px 40px var(--cor-p0);
-  }
-  .sp-2 > img {
-    height: 40px;
-  }
-  .sp-2 div {
-    padding-top: 20px;
-  }
 }
 /*  */
 .sp-3 {
@@ -216,7 +129,27 @@
   left: -36px;
   top: 50px;
 }
+/*  */
 @media (max-width: 1200px) {
+  .sp-1 {
+    gap: 0 40px;
+    margin-top: 36px;
+  }
+  .sp-1 p,
+  .sp-1 span {
+    padding-top: 40px;
+  }
+  .sp-1 div {
+    padding-right: calc((100vw - 800px) / 2);
+  }
+  /*  */
+  .sp-2 {
+    box-shadow: inset 0px 37px var(--cor-c7), inset 0px 90px var(--cor-p0);
+  }
+  .sp-2 > img {
+    height: 90px;
+  }
+  /*  */
   .sp-3 {
     box-shadow: inset 0px 50px var(--cor-p0), inset 0px 90px var(--cor-c7);
     padding-bottom: 60px;
@@ -235,9 +168,7 @@
   .sp-3 li:first-child img {
     top: 4px;
   }
-  .sp-3 li:nth-child(2) img {
-    top: 44px;
-  }
+  .sp-3 li:nth-child(2) img,
   .sp-3 li:last-child img {
     top: 44px;
   }
@@ -245,7 +176,19 @@
     width: 100%;
   }
 }
+
 @media (max-width: 1000px) {
+  .sp-1 div {
+    padding-right: calc((100vw - 750px) / 2);
+  }
+  /*  */
+  .sp-2 {
+    box-shadow: inset 0px 24px var(--cor-c7), inset 0px 60px var(--cor-p0);
+  }
+  .sp-2 > img {
+    height: 60px;
+  }
+  /*  */
   .sp-3 {
     box-shadow: inset 0px 32px var(--cor-p0), inset 0px 60px var(--cor-c7);
   }
@@ -257,11 +200,7 @@
     height: 20px;
     top: 4px;
   }
-  .sp-3 li:nth-child(2) img {
-    left: -28px;
-    height: 20px;
-    top: 44px;
-  }
+  .sp-3 li:nth-child(2) img,
   .sp-3 li:last-child img {
     left: -28px;
     height: 20px;
@@ -272,6 +211,20 @@
   }
 }
 @media (max-width: 800px) {
+  .sp-1 div {
+    padding-right: calc((100vw - 550px) / 2);
+  }
+  /*  */
+  .sp-2 {
+    box-shadow: inset 0px 17px var(--cor-c7), inset 0px 40px var(--cor-p0);
+  }
+  .sp-2 > img {
+    height: 40px;
+  }
+  .sp-2 div {
+    padding-top: 20px;
+  }
+  /*  */
   .sp-3 {
     box-shadow: inset 0px 22px var(--cor-p0), inset 0px 40px var(--cor-c7);
   }
@@ -298,7 +251,36 @@
     width: 100%;
   }
 }
+
 @media (max-width: 600px) {
+  .sp-1 {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    grid-template-columns: 1fr;
+  }
+  .sp-1 picture {
+    display: none;
+  }
+  .sp-1 p {
+    padding-top: 40px;
+  }
+  .sp-1 span {
+    padding-top: 20px;
+  }
+  .sp-1 div {
+    padding-right: 50px;
+    padding-left: 50px;
+  }
+  .sp-1 div picture {
+    padding-top: 20px;
+    display: block;
+    height: 100%;
+  }
+  .sp-1 div img {
+    height: 140px;
+    width: 100%;
+  }
+  /*  */
   .sp-3 h1 {
     font-size: 44px;
     line-height: 44px;
